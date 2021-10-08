@@ -1,0 +1,29 @@
+/*COLORS*/
+
+$primary-pale-blue: hsl(225, 100%, 94%);
+$primary-bright-blue: hsl(245, 75%, 52%);
+
+$neutral-pale-blue: hsl(225, 100%, 94%);
+$neutral-desat-blue: hsl(224, 23%, 55%);
+$neutral-dark-blue: hsl(223, 47%, 23%);
+
+/*FONT*/
+
+$font-red-hat: 'Red Hat Display', sans-serif;
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font-red-hat;
+    line-height: 1.3;
+    margin: 0px;
+    padding: 0px;
+    background-color: pink;
+}
