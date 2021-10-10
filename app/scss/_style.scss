@@ -1,0 +1,171 @@
+/*COLORS*/
+
+$primary-pale-blue: hsl(225, 100%, 94%);
+$primary-bright-blue: hsl(245, 75%, 52%);
+
+$neutral-pale-blue: hsl(225, 100%, 98%);
+$neutral-desat-blue: hsl(224, 23%, 55%);
+$neutral-dark-blue: hsl(223, 47%, 23%);
+
+$hover-purple: #766cf1;
+
+
+/*FONT*/
+
+$font-red-hat: 'Red Hat Display', sans-serif;
+
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    font-family: $font-red-hat;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    color: $neutral-dark-blue; 
+    background-image: url(/images/pattern-background-desktop.svg);   
+    background-repeat: no-repeat;
+    background-color: $primary-pale-blue;
+    background-size: 100% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    height: 69rem;
+    width: 45rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    position: relative;
+    box-shadow: 1rem 1.5rem 1rem .5rem rgba($neutral-desat-blue, .1);
+    padding-bottom: 3.5rem;
+
+    &__hero-image {
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+        
+    }
+
+    &__heading {
+        font-size: 2.75rem;
+        font-weight: 900;
+        margin-top: 3.25rem;
+
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: $neutral-desat-blue;
+        padding: 1.75rem 5rem;
+
+    }
+
+    &__plan {
+        width: 35rem;
+        background-color: $neutral-pale-blue;
+        margin: .5rem auto 3rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-position: row;
+        justify-content: space-around;
+        align-content: center;
+
+        &-icon {
+            margin-right: 1rem;
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+
+        &-pricing {
+            display: block;
+            margin-right: 10rem;
+            align-self: center;
+
+            &--heading-2 {
+                font-weight: 900;
+                font-size: 1.6rem;                
+            }
+
+            &--price {
+                font-weight: 500;
+                color: $neutral-desat-blue;
+                font-size: 1.6rem;
+                margin-top: .5rem;
+            }
+        }
+
+        &-link {
+            &:link,
+            &:visited {
+                font-size: 1.5rem;
+                font-weight: 800;
+                flex: 0 0 45%;
+                text-align: right;
+                align-self: center;
+            }
+           
+            &:hover { 
+                text-decoration: none;
+                color: $hover-purple;
+            }
+    
+        }
+
+    }
+
+    &__button {        
+        width: 35rem;
+        border: none;
+        padding: 1.7rem;
+        background-color: $primary-bright-blue;
+        border-radius: 1rem;
+        color: $neutral-pale-blue;
+        font-weight: 900;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        box-shadow: 0.2rem 2rem 1.5rem rgba($primary-bright-blue, .2);
+        margin-bottom: 2.5rem;
+
+        &:hover {
+            background-color: $hover-purple;
+        }
+
+    }     
+   
+    .btn-text {
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: $neutral-desat-blue;
+            display: inline-block;
+            text-decoration: none;         
+        }
+
+        &:hover {
+            color: $neutral-dark-blue;
+        }
+    }
+
+}
+
+    .attribution {
+        margin-top: 1rem;
+  
+}
