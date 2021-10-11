@@ -38,24 +38,25 @@ body {
   padding-bottom: 3.5rem;
 }
 .container__hero-image {
+  display: block;
   width: 100%;
   border-radius: 2rem 2rem 0 0;
 }
 .container__heading {
   font-size: 2.75rem;
   font-weight: 900;
-  margin-top: 3.25rem;
+  margin-top: 4.25rem;
 }
 .container__text {
   font-size: 1.6rem;
   color: #7280a7;
-  padding: 1.75rem 5rem;
+  padding: 1.5rem 6rem;
 }
 .container__plan {
   width: 35rem;
   background-color: #f5f7ff;
   margin: 0.5rem auto 3rem;
-  padding: 2rem;
+  padding: 1.75rem;
   border-radius: 1rem;
   display: flex;
   flex-position: row;
@@ -66,6 +67,7 @@ body {
   margin-right: 1rem;
   height: 4.5rem;
   width: 4.5rem;
+  align-self: center;
 }
 .container__plan-pricing {
   display: block;
@@ -74,16 +76,16 @@ body {
 }
 .container__plan-pricing--heading-2 {
   font-weight: 900;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 .container__plan-pricing--price {
   font-weight: 500;
   color: #7280a7;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-top: 0.5rem;
 }
 .container__plan-link:link, .container__plan-link:visited {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   flex: 0 0 45%;
   text-align: right;
@@ -94,24 +96,23 @@ body {
   color: #766cf1;
 }
 .container__button {
-  width: 35rem;
+  width: 35.5rem;
   border: none;
-  padding: 1.7rem;
+  padding: 1.75rem 0;
   background-color: #3829e0;
-  border-radius: 1rem;
+  border-radius: 1.25rem 1rem;
   color: #f5f7ff;
-  font-weight: 900;
-  font-size: 1.25rem;
-  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.5rem;
   box-shadow: 0.2rem 2rem 1.5rem rgba(56, 41, 224, 0.2);
-  margin-bottom: 2.5rem;
+  margin: 0.5rem auto 3rem;
 }
 .container__button:hover {
   background-color: #766cf1;
 }
 .container .btn-text:link, .container .btn-text:visited {
-  font-size: 1.6rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 900;
   color: #7280a7;
   display: inline-block;
   text-decoration: none;
